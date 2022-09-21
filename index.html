@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas y atributos</title>
+    
+</head>
+<body>
+<h1>Etiquetas para estructurar</h1>
+<center>
+<h2>Section</h2>
+</center>
+<p>Representa una sección genérica de un documento. 
+Sirve para determinar qué contenido corresponde a qué parte de un esquema.</p>
+<section>
+    <h4>Ciencia, Alimentación e Ilustración </h4>
+    <p>
+      Un proyecto que pretende descubrir toda la ciencia que hay detrás de los platos que 
+      comemos en nuestro día a día. Así como resaltar la importancia de la alimentación y reivindicar su papel tan importante en la sociedad actual para tener una vida saludable.
+    </p>
+    <img src = "imgs/ciencia.jpg" alt = "imagen"/>
+</section>
+
+
+<center>
+    <h2>Article</h2>
+</center>
+    <p>Define contenido independiente de la web.</p>
+<article>
+    <header>
+    <center>
+      <h3>Lenguaje de programación </h3>
+    </center>
+      <p>Publicado <time pubdate datetime="2020-08-11T20:00-04:00">5 meses atrás</time></p>
+    </header>
+    <p>Es un lenguaje de computadora que los programadores utilizan para comunicarse y para desarrollar programas de software, aplicaciones, páginas webs, scripts u otros conjuntos de instrucciones para que sean ejecutadas por los ordenadores. </p>
+    <p>...</p>
+    <footer>
+      <p>© Todos los derechos reservados</p>
+    </footer>
+  </article>
+
+  <h1>Etiquetas de agrupación</h1>
+
+  <center>
+    <h2>blockquote</h2>
+</center>
+<p>Definir texto citado.</p>
+
+
+<p>Nuevamente, podemos ver cómo la distancia y los recuerdos oscurecían su alma:</p>
+
+<blockquote cite="http://www.georgerrmartin.com/grrm_book/a-game-of-thrones-a-song-of-ice-and-fire-book-one/">
+
+  <p>No tenía un destino en mente. Solo quería cabalgar. Siguió el arroyo por un tiempo, escuchando el goteo del agua congelada sobre las rocas, luego cortó camino a través de los campos hacia el camino del rey.</p>
+
+</blockquote>
+
+<p>— Goerge R. R. Martin</p>
+
+
+<center>
+  <h2>figure</h2>
+</center>
+<p>Definir imagenes ilustradas como parte  del documento html.</p>
+<p> Aqui va <figure>
+  <img src = "imgs/lol.jpg" alt = "imagen"/>
+  <figcaption> Universidad Autónoma de Querétaro  </figcaption>
+</figure> el logo de la univercidad </p>
+<p>La UAQ es una institución de educación superior con pertinencia social, financieramente viable, que centra la atención en la formación de sus estudiantes para asegurar su permanencia y su desarrollo integral, 
+  con programas educativos reconocidos por su buena calidad. </p>
+<p>Genera y aplica el conocimiento, forma recursos humanos en investigación, con cuerpos académicos consolidados, integrados en redes de colaboración a nivel nacional e internacional; con procesos de gestión, eficaces y eficientes, contribuyendo a la preservación y 
+  difusión de la cultura, estrechamente vinculada con los diferentes sectores de la sociedad, promoviendo la pluralidad y libertad de pensamiento.</p>   
+
+  <h1>Etiquetas semánticas</h1>
+  <center>
+    <h2>mark</h2>
+</center>
+<p>Nos ayuda a resaltar texto.</p>
+
+<p><mark style="background-color:red;">La programación informática</mark> es el arte del proceso por el cual se limpia, codifica, traza y protege el código fuente 
+  de programas computacionales, en otras palabras, es indicarle a la computadora lo que tiene que hacer.</p>
+<p>La programación informática es una de las <mark style="background-color:aqua;">habilidades esenciales</mark>  que 
+  aprendes cuando estudias informática.</p>
+
+  <center>
+    <h2>a</h2>
+</center>
+<p>Nos permite crear hiperenlaces en el documento HTML a recursos internos o externos.</p>
+Pulsa <a href="https://www.samsung.com/mx/" target="_blank">aquí</a> para visitar el sitio oficial de SAMSUNG.
+
+
+<h1>Etiquetas para incrustar contenido</h1>
+  <center>
+    <h2>iframe</h2>
+</center>
+<p>Incrustar un documento HTML  dentro del documento HTML principal.</p>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/zAZmlW2X-mk" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
+
+<center>
+  <h2>audio</h2>
+</center>
+<p>Incrustar un audio.</p>
+<audio src="Audio/hear-me-now-alok-bruno-martini-ft-zeeba-slowreverb.mp3" controls  muted></audio>
+
+
+<h1>Etiquetas de tablas</h1>
+  <center>
+    <h2>table,tr,td,th</h2>
+</center>
+<p>table:Elemento principal de una tabla y se le considera la etiqueta padre.
+   tr: Se usa para indicar una fila de celdas en una tabla
+   td: Se usa para indicar una celda
+   th: Se usa para definir el encabezado
+</p>
+<style type="text/css">
+  table, th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+</style>
+<table style="width: 100%">
+  <tr>
+    <th>
+      NOMBRE
+      </th>
+      <th>
+        APELLIDO
+        </th>
+        <th>
+          TELEFONO
+          </th>
+        </tr>
+
+      <tr>
+        <td>Pedro</td>
+        <td>Correa</td>
+        <td>4423212450</td>
+      </tr>
+      <tr>
+        <td>Raul</td>
+        <td>Miranda</td>
+        <td>4421216405</td>
+      </tr>
+      <tr>
+        <td>Fernando</td>
+        <td>Guillen</td>
+        <td>4421137605</td>
+      </tr>
+</table>
+
+
+<h1>Etiquetas de formulario</h1>
+  <center>
+    <h2>form,input,button,textarea, select</h2>
+</center>
+<p>form:Etiqueta padre de un formulario que permite  enviar datos  a un servidor local o externo.</p>
+<p>input: campo de datos o campos de texto con el que el usurario puede interactuar</p>
+<p>button: representa un botón</p>
+<p>textarea: un campo de texto donde se puede introducir texto en líneas dependiendo de la longitud</p>
+<p>select: input de seleccion enre un conjunto de opciones</p>
+
+<form>
+  <input placeholder="NOMBRE" type="text">
+  <input placeholder="PRIMER APELLIDO" type="text">
+  <input placeholder="SEGUNDO APELLIDO" type="text">
+  <input placeholder="EDAD" type="number">
+  <input placeholder="TELEFONO" type="tel">
+  <input aria-placeholder="CORREO PERSONAL" type="email">
+  <select>
+    <option> Femenino</option>
+    <option> Maculino</option>
+    <option>otro</option>
+</select>
+
+  <button>Click para registrar</button>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+</form>
+
+
+
+
+</body>
+</html>
+
